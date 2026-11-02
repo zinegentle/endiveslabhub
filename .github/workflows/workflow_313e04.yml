@@ -1,0 +1,12 @@
+name: CI Pipeline
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup environment
+        run: echo "setup complete"
